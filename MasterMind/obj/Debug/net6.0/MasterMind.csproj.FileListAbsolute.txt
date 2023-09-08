@@ -1,0 +1,15 @@
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.exe
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.deps.json
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.runtimeconfig.json
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.dll
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.pdb
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.csproj.AssemblyReference.cache
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfoInputs.cache
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfo.cs
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.csproj.CoreCompileInputs.cache
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.dll
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\refint\MasterMind.dll
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.pdb
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.genruntimeconfig.cache
+C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\ref\MasterMind.dll
