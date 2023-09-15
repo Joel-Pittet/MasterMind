@@ -1,6 +1,7 @@
 ﻿//
 int NbColor = 0;
 string UserAnswer;
+int GoodColorPlace = 0;
 int GoodColor = 0;
 
 //Liste pour couleurs disponibles
@@ -64,18 +65,20 @@ else // Sinon compare chaque réponse pour voir s'il y en a des bonnes, lui affi
         if (userColors[i] == ColorSelected[i])
         {
 
-            GoodColor++;
+            GoodColorPlace++;
 
         }
+        else if (userColors[0] == ColorSelected[1] || userColors[0] == ColorSelected[2] || userColors[0] == ColorSelected[3])
+        {
 
-
-        //Console.WriteLine($"{userColors[i]} --  {ColorSelected[i]}");
+            GoodColor++;
+            
+        }
+           //Console.WriteLine($"{userColors[i]} --  {ColorSelected[i]}");
     }
 
-    Console.WriteLine($"Vous avez {GoodColor} bonnes couleurs aux bons endroits");
-
-
-
+    Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
+    Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
 
 }
 
