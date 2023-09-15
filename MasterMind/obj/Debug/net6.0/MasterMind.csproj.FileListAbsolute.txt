@@ -13,3 +13,31 @@ C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\refint\MasterMin
 C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.pdb
 C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.genruntimeconfig.cache
 C:\Users\ph06ilj\Desktop\MasterMind\MasterMind\obj\Debug\net6.0\ref\MasterMind.dll
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfoInputs.cache
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfo.cs
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.csproj.CoreCompileInputs.cache
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.dll
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\refint\MasterMind.dll
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.pdb
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.exe
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.deps.json
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.runtimeconfig.json
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.dll
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.pdb
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.genruntimeconfig.cache
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\ref\MasterMind.dll
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.exe
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.deps.json
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.runtimeconfig.json
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.dll
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\bin\Debug\net6.0\MasterMind.pdb
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfoInputs.cache
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.AssemblyInfo.cs
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.csproj.CoreCompileInputs.cache
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.dll
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\refint\MasterMind.dll
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.pdb
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.genruntimeconfig.cache
+C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\ref\MasterMind.dll
