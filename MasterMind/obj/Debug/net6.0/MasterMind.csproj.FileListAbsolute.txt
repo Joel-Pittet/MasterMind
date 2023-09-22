@@ -41,3 +41,4 @@ C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\refint\Mas
 C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.pdb
 C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.genruntimeconfig.cache
 C:\Users\joelp\OneDrive\Bureau\MasterMind\MasterMind\obj\Debug\net6.0\ref\MasterMind.dll
+D:\FPA 2023-2025\1ère année\Melly\MasterMind\MasterMind\obj\Debug\net6.0\MasterMind.csproj.AssemblyReference.cache
