@@ -56,6 +56,8 @@ do
 
     //Réinitialise le compteur pour qu'il y ai toujours la suite 1. 2. 3. 4. quand l'utilisateur rentre les couleurs
     ColorUserCount = 1;
+    GoodColorPlace = 0;
+    GoodColor = 0;
 
     Console.WriteLine($"Essai numéro {tries}");
 
@@ -71,11 +73,14 @@ do
     }
 
     tries++;
+
     //Copie de la liste du code secret pour pouvoir retirer les couleurs juste sans problème
     //et pouvoir gérer les couleurs juste au mauvais endroit
-    //var LColorSelectedCopy = new List<string>(LColorSelected);
+    var LColorSelectedCopy = LColorSelected.ToList();
+    var LColorUserCopy = LColorUser.ToList();
 
     //compare les couleurs du code secret et de l'utilisateur 
+
     for (int i = 0; i < LColorUser.Count; i++)
     {
         //Ajoute 1 à chaque couleur donnée qui correspond au code secret 
@@ -83,24 +88,29 @@ do
         {
 
             GoodColorPlace++;
-            //Check dans la liste du code si elle contient des couleurs données
-        }
-        else if (LColorSelected.Contains(LColorUser[i]))
-        {
+
             //enlève les couleurs trouvées pour compter les couleurs
             //justes au mauvais endroits 
-            LColorSelected.Remove(LColorUser[i]);
-            GoodColor++;
-
+            LColorSelectedCopy.Remove(LColorUser[i]);
+            LColorUserCopy.Remove(LColorUser[i]);
+        
         }
 
     }
+    //Check dans la liste du code si elle contient des couleurs données
+    for (int i = 0; i < LColorUser.Count; i++)
+    {
+        if (LColorSelectedCopy.Contains(LColorUserCopy[i]))
+        {
 
+            GoodColor++;
 
+        }
+    }
 
 
     //Retourne à l'utilisateur le nombre de bonne couleurs et le nombre de couleurs juste au mauvais endroit
-   Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
+    Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
    Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
 
 
