@@ -1,11 +1,15 @@
-﻿//nb couleur code, réponse utilisateur, couleur toute juste et couleur juste mais mauvais endroit
+﻿///ETML
+///Auteur: Joël Pittet
+///Date: 29.09.2023
+///Description: Réplique informatique du jeu mastermind
+///
+
+//nb couleur code, réponse utilisateur, couleur toute juste et couleur juste mais mauvais endroit
 int NbColor = 0;
-//string UserAnswer;
 int GoodColorPlace = 0;
 int GoodColor = 0;
 int ColorUserCount = 1;
-int TabCase = 0;
-//int tries = 0;
+int tries = 1;
 var LColorUser = new List <string>();
 
 
@@ -30,68 +34,77 @@ Console.WriteLine("+----------+");
 Console.WriteLine("Bienvenue dans le MasterMind");
 Console.WriteLine("Les couleurs disponibles sont les suivantes: rouge, vert, bleu, orange, jaune, violet, rose");
 
-//Boucle pour la création du code grâce à ColorList
+    //Boucle pour la création du code grâce à ColorList
+    do
+    {
+        Random RandomCode = new Random();
+        int RandomColor = RandomCode.Next(ColorList.Count);
+
+        LColorSelected.Add(ColorList[RandomColor]);
+
+
+        NbColor++;
+
+        Console.WriteLine($"{NbColor}. {ColorList[RandomColor]}");
+
+    } while (NbColor != 4);
+
+
 do
 {
-    Random RandomCode = new Random();
-    int RandomColor = RandomCode.Next(ColorList.Count);
+    Console.WriteLine("Quel est le code mystère selon vous ?");
 
-    LColorSelected.Add(ColorList[RandomColor]);
-   
+    //Réinitialise le compteur pour qu'il y ai toujours la suite 1. 2. 3. 4. quand l'utilisateur rentre les couleurs
+    ColorUserCount = 1;
 
-    NbColor++;
+    Console.WriteLine($"Essai numéro {tries}");
 
-    Console.WriteLine($"{NbColor}. {ColorList[RandomColor]}");
-
-} while (NbColor != 4);
-
-
-
-Console.WriteLine("Quel est le code mystère selon vous ?");
-
-//demande, récupère et insère dans un tableau les couleurs de l'utilisateur
-for (int i = 0; i < 4; i++)
-{
-
-    Console.Write($"Couleur {ColorUserCount}: ");
-    ColorUserCount++;
-    LColorUser.Add(Console.ReadLine());
-
-
-}
-
-
-//compare les couleurs du code secret et de l'utilisateur 
-for (int i = 0; i < LColorUser.Count; i++)
-{
-
-    if (LColorUser[i] == LColorSelected[i])
+    //demande, récupère et insère dans un tableau les couleurs de l'utilisateur
+    for (int i = 0; i < 4; i++)
     {
-
-        GoodColorPlace++;
+        
+        Console.Write($"Couleur {ColorUserCount}: ");
+        ColorUserCount++;
+        LColorUser.Add(Console.ReadLine().ToLower());
 
 
     }
 
-        
-    LColorSelected.Remove(LColorSelected[i]);
-    LColorUser.Remove(LColorUser[i]);
+    tries++;
+    //Copie de la liste du code secret pour pouvoir retirer les couleurs juste sans problème
+    //et pouvoir gérer les couleurs juste au mauvais endroit
+    //var LColorSelectedCopy = new List<string>(LColorSelected);
 
-}
+    //compare les couleurs du code secret et de l'utilisateur 
+    for (int i = 0; i < LColorUser.Count; i++)
+    {
+        //Ajoute 1 à chaque couleur donnée qui correspond au code secret 
+        if (LColorUser[i] == LColorSelected[i])
+        {
+
+            GoodColorPlace++;
+            //Check dans la liste du code si elle contient des couleurs données
+        }
+        else if (LColorSelected.Contains(LColorUser[i]))
+        {
+            //enlève les couleurs trouvées pour compter les couleurs
+            //justes au mauvais endroits 
+            LColorSelected.Remove(LColorUser[i]);
+            GoodColor++;
+
+        }
+
+    }
 
 
 
-Console.WriteLine(LColorSelected[0]);
-Console.WriteLine(LColorUser[0]);
+
+    //Retourne à l'utilisateur le nombre de bonne couleurs et le nombre de couleurs juste au mauvais endroit
+   Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
+   Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
 
 
-
-
-
-Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
-Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
-
-
+}while (tries <= 10);
 
 
 
@@ -104,91 +117,3 @@ Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
 {
     Console.WriteLine("Vous avez atteint le nombre d'essais maximum, le code secret était");
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Récupération de la réponse utilisateur
-//UserAnswer = Console.ReadLine().ToLower();
-
-//Si la réponse utilisateur est égale au code secret affiche un message de victoire
-/*if (UserAnswer == $"{ColorSelected[0]},{ColorSelected[1]},{ColorSelected[2]},{ColorSelected[3]}")
-{
-
-    Console.WriteLine("Vous avez trouvé le code secret, Bravo !!");
-
-}
-else // Sinon compare chaque réponse de l'utilisateur pour voir s'il y en a des bonnes, lui affiche le nombre de juste
-{
-    var userColors = UserAnswer.Split(",");
-
-    for (var i = 0; i < userColors.Length; i++)
-    {
-
-        if (userColors[i] == ColorSelected[i])
-        {
-
-            GoodColorPlace++;
-
-            //Console.WriteLine(userColors[i]);
-            ColorSelected.Remove(ColorSelected[i]);
-            
-
-        }
-
-        
-    }
-
-   
-
-    /*if (userColors[0] == ColorSelected[1] || userColors[0] == ColorSelected[2] || userColors[0] == ColorSelected[3])
-    {
-
-        GoodColor++;
-
-    }
-    else if (userColors[1] == ColorSelected[0] || userColors[1] == ColorSelected[2] || userColors[1] == ColorSelected[3])
-    {
-        GoodColor++;
-    }
-    else if (userColors[2] == ColorSelected[0] || userColors[2] == ColorSelected[1] || userColors[2] == ColorSelected[3])
-    {
-        GoodColor++;
-    }
-    else if (userColors[3] == ColorSelected[0] || userColors[3] == ColorSelected[1] || userColors[3] == ColorSelected[2])
-    {
-        GoodColor++;
-    }
-
-Console.WriteLine($"Vous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
-    Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
-
-}
-*/
-
-
-
-
