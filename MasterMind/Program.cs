@@ -42,10 +42,7 @@ do
 
     secretCode.Add(ColorList[RandomColor]);
 
-
     NbColor++;
-
-    //Console.WriteLine($"{NbColor}. {ColorList[RandomColor]}");
 
 } while (NbColor != 4);
 
@@ -58,14 +55,14 @@ do
     ColorUserCount = 1;
     GoodColorPlace = 0;
     GoodColor = 0;
-    //Reinitialise la list pour que l'index n'aille pas au dessus de 4
+
+    //Réinitialise la list pour que l'index n'aille pas au dessus de 4
     userGuess = new List<string>();
     Console.WriteLine($"Essai numéro {tries}\n");
 
-    //demande, récupère et insère dans un tableau les couleurs de l'utilisateur
+    //Demande, récupère et insère dans un tableau les couleurs de l'utilisateur
     for (int i = 0; i < 4; i++)
     {
-        
         Console.Write($"Couleur {ColorUserCount}: ");
         ColorUserCount++;
         userGuess.Add(Console.ReadLine().ToLower());
@@ -75,7 +72,8 @@ do
 
     tries++;
 
-    //Copie de la liste de couleurs de l'utilisateur pour pouvoir retirer les couleurs juste sans problème
+    //Copie de les listes de couleurs de l'utilisateur et du code secret pour pouvoir retirer
+    //les couleurs juste et au bon endroit sans problème d'index
     //et pouvoir gérer les couleurs juste au mauvais endroit
     var secretCodeCopy = secretCode.ToList();
     var userGuessCopy = userGuess.ToList();
@@ -84,14 +82,13 @@ do
 
     for (int i = 0; i < userGuess.Count; i++)
     {
-        //Ajoute 1 à chaque couleur donnée qui correspond au code secret 
+        //Compte le nombre de couleur juste au bon endroit, en comparant le code et l'essai de l'utilisateur
         if (userGuess[i] == secretCode[i])
         {
 
             GoodColorPlace++;
 
-            //enlève les couleurs trouvées pour compter les couleurs
-            //justes aux mauvais endroits 
+            //Enlève les couleurs juste au bon endroit trouvées
             secretCodeCopy.Remove(userGuess[i]);
             userGuessCopy.Remove(userGuess[i]);
 
@@ -112,8 +109,8 @@ do
     
 
     //Retourne à l'utilisateur le nombre de bonne couleurs et le nombre de couleurs juste au mauvais endroit
-    Console.WriteLine($"\nVous avez {GoodColorPlace} bonnes couleurs aux bons endroits");
-   Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position");
+    Console.WriteLine($"\nVous avez {GoodColorPlace} bonnes couleurs aux bons endroits\n");
+   Console.WriteLine($"Vous avez {GoodColor} couleurs juste en mauvaise position\n");
 
 
 }while (GoodColorPlace != 4 && tries <= 10);
