@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ph06ilj\\Desktop\\MasterMind Version Finale\\MasterMind\\MasterMind.csproj",
+      "projectUniqueName": "C:\\Users\\ph06ilj\\Desktop\\MasterMind-Version_Finale\\MasterMind\\MasterMind.csproj",
       "projectName": "MasterMind",
-      "projectPath": "C:\\Users\\ph06ilj\\Desktop\\MasterMind Version Finale\\MasterMind\\MasterMind.csproj",
+      "projectPath": "C:\\Users\\ph06ilj\\Desktop\\MasterMind-Version_Finale\\MasterMind\\MasterMind.csproj",
       "packagesPath": "C:\\Users\\ph06ilj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ph06ilj\\Desktop\\MasterMind Version Finale\\MasterMind\\obj\\",
+      "outputPath": "C:\\Users\\ph06ilj\\Desktop\\MasterMind-Version_Finale\\MasterMind\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
